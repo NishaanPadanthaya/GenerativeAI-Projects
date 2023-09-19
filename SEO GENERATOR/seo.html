@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Keyword Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(126, 191, 221);
+            color: #05011a;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            font-size: 18px;
+            margin-top: 5px;
+            background-color: #fff;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SEO Keyword Generator</h1>
+    <form method="POST">
+        <label for="keyword">Enter your required SEO keyword:</label>
+        <input type="text" id="keyword" name="keyword" required>
+        <button type="submit">Generate Keywords</button>
+    </form>
+    {% if generated %}
+        <h2>Generated Keywords for '{{ original_key }}':</h2>
+        <ul>
+            {% for keyword in keywords %}
+                <li>{{ keyword }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
