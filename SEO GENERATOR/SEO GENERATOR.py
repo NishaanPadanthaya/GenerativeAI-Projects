@@ -4,6 +4,8 @@ import openai
 app = Flask(__name__)
 openai.api_key = 'yourapikey'
 
+#this api key can be found when you create an openai account and access your api key
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
