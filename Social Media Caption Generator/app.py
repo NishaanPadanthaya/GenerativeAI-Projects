@@ -16,7 +16,6 @@ def generate_caption(image):
 
     prompt = "Please generate a captivating social media caption for the uploaded picture that reflects its content, mood, and any relevant hashtags or mentions. The caption should be engaging and suitable for sharing on platforms like Instagram, Twitter, or Facebook."
 
-    # Generate content based on the prompt and the uploaded image
     response = model.generate_content([prompt,image], stream=True)
 
     response.resolve()
