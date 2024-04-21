@@ -3,7 +3,7 @@ A user story is a concise, informal description of a feature or functionality fr
 User stories are typically written collaboratively by the development team and stakeholders, and they serve as the basis for planning, development,
 and testing activities throughout the Agile development process.
 
-Now here we using the help of AI to generate the user stories,acceptence criteria and user story points.
+Now here we are using the help of AI to generate the user stories,acceptence criteria and user story points.
 Here's how it works:
 
 1. **Setup and Configuration**: The script first imports necessary libraries like dotenv for environment variables, google.generativeai for accessing AI models, os
